@@ -1,0 +1,103 @@
+﻿.title-img-bar {
+    height: 140px;
+    background-image: url('../image/profile.png'); /* Replace 'your-image.jpg' with the actual image file path */
+    background-size: cover; /* Ensure the background image covers the entire div */
+    background-position: center; /* Center the background image */
+    display: flex; /* Use flexbox to vertically center the title */
+    align-items: center; /* Vertically center the title within the container */
+}
+
+.title {
+    font-size: 42px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 76px;
+}
+
+#secMessage {
+    width: 20%;
+    margin: auto auto;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    min-width: 300px;
+}
+
+.whole-div {
+    padding: 40px 80px 80px 80px;
+}
+
+.tbl1 {
+    border-collapse: separate;
+    border-spacing: 0 20px;
+    width: 60%;
+}
+
+.tbl {
+    width: 70%;
+}
+
+.txtTable {
+    width: 90%;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.lbl, .lblTable {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.txt {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.btnEdit {
+    color: #ffffff;
+    background-color: #22CB79;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 30px;
+}
+
+    .btnEdit:hover {
+        color: #22CB79;
+        background-color: #ffffff;
+    }
+
+.btnHome {
+    color: #ffffff;
+    background-color: #22CB79;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+    .btnHome:hover {
+        color: #22CB79;
+        background-color: #ffffff;
+    }
+
+@media (max-width: 1200px) {
+    .lbl{
+        padding-right: 200px;
+    }
+
+    .txt {
+        min-width: 200px;
+    }
+
+    .tbl {
+        min-width: 450px;
+    }
+}

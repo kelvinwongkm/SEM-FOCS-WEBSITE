@@ -1,0 +1,124 @@
+﻿html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+    body.login_bg {
+        background-image: url('../image/login_bg_img.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+.login_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    flex-direction: row;
+}
+
+.login_logo {
+    width: 30%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Add spacing between login_logo and user_login */
+    border-right: 1px solid black;
+}
+
+.sign_up {
+    width: 60%;
+    /*    padding-left: 250px;*/
+    padding-left: 10px;
+}
+
+.lblSignUp {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.divSignUp {
+    margin-bottom: 60px;
+}
+
+input::placeholder {
+    padding-left: 10px;
+    font-size: 14px;
+    color: #999; /* Placeholder text color */
+}
+
+.lbl_error_msg {
+    font-size: 14px;
+}
+
+.div {
+    margin-top: 20px;
+}
+
+.lbl {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.ddl {
+    height: 40px;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.ddlTable {
+    height: 40px;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.tbl {
+    width: 80%;
+}
+
+.txt {
+    width: 29%;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.btnSignUp {
+    background: #272727;
+    border-radius: 10px;
+    margin-top: 60px;
+    width: 20%;
+    height: 40px;
+    border: 1px solid #000000;
+    color: white;
+}
+
+.lblError {
+    color: red;
+}
+
+@media (max-width: 1200px) {
+    .login_container {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .login_logo {
+        width: 100%;
+        margin: 20px 0px;
+        border-right: 0px;
+    }
+
+    .sign_up {
+        width: 100%;
+        padding-left: 35%;
+    }
+
+    .divSignUp {
+        margin-bottom: 0px;
+    }
+}

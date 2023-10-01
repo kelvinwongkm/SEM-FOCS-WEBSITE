@@ -1,0 +1,105 @@
+﻿html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+    body.login_bg {
+        background-image: url('../image/login_bg_img.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+.login_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    flex-direction: row;
+}
+
+.login_logo {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Add spacing between login_logo and user_login */
+    border-right: 1px solid black;
+}
+
+.user_login {
+    width: 60%;
+    padding-left:250px;
+
+}
+
+    .user_login p {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 30px 0 10px 0;
+    }
+
+.login_title p{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+
+input::placeholder {
+    padding-left:10px;
+    font-size:14px;
+    color: #999; /* Placeholder text color */
+
+}
+
+.lbl_error_msg{
+    font-size:14px;
+}
+
+.btnSign {
+    background: #272727; 
+    border-radius: 10px; 
+    width: 20%; 
+    height: 40px; 
+    border: 1px solid #000000; 
+    color: white;
+    margin-top: 50px;
+}
+
+@media (max-width: 1000px) {
+    .login_container {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .login_logo {
+        width: 100%;
+        margin: 40px 0px;  
+        border-right: 0px;
+    }
+
+    .user_login {
+        width: 100%;
+        padding-left: 35%;
+    }
+
+        .user_login p {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0 10px 0;
+        }
+
+    .btnSign {
+        margin-top: 40px;
+    }
+
+    .login_title p {
+        font-size: 35px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,120 @@
+﻿.title-img-bar {
+    height: 140px;
+    background-image: url('../image/profile.png'); /* Replace 'your-image.jpg' with the actual image file path */
+    background-size: cover; /* Ensure the background image covers the entire div */
+    background-position: center; /* Center the background image */
+    display: flex; /* Use flexbox to vertically center the title */
+    align-items: center; /* Vertically center the title within the container */
+}
+
+.title {
+    font-size: 42px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 76px;
+}
+
+.sign_up {
+    /*    padding-left: 250px;*/
+    padding: 40px 80px 80px 80px;
+}
+
+input::placeholder {
+    padding-left: 10px;
+    font-size: 14px;
+    color: #999; /* Placeholder text color */
+}
+
+.lbl_error_msg {
+    font-size: 14px;
+}
+
+.div {
+    margin-top: 20px;
+}
+
+.lbl {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.ddl {
+    height: 40px;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.ddlTable {
+    height: 40px;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.tbl {
+    width: 60%;
+}
+
+.txt {
+    width: 29%;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.btnSave {
+    color: #ffffff;
+    background-color: #22CB79;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-right: 20px;
+}
+
+    .btnSave:hover {
+        color: #22CB79;
+        background-color: #ffffff;
+    }
+
+.btnCancel {
+    color: #000000;
+    background-color: #ececec;
+    font-weight: bold;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+    .btnCancel:hover {
+        color: #ffffff;
+        background-color: #000000;
+    }
+
+.lblError {
+    color: red;
+}
+
+@media (max-width: 1200px) {
+    .login_container {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .login_logo {
+        width: 100%;
+        margin: 20px 0px;
+        border-right: 0px;
+    }
+
+    .ddl{
+        min-width: 150px;
+    }
+
+    .txt {
+        min-width: 150px;
+    }
+
+    .ddlTable {
+        min-width: 100px;
+    }
+}

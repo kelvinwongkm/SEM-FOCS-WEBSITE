@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserHeaderFooter.master.cs" Inherits="SEAM_Assignment.UserHeaderFooter" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Tunku Abdul Rahman University of Management & Technology - Faculty of Computing and Information Technology</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="images/fevicon.png" type="images/logo.png" />
+
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet" />
+    <!-- fonts style -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" /> -->
+</head>
+
+<body>
+    <form id="form1" runat="server" submitdisabledcontrols="False">
+        <!-- header section starts -->
+        <header class="header_section long_section px-0">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+                <div class="d-flex align-items-center">
+                    <a href="/Home.aspx" class="logo-link">
+                        <img src="/image/logo.png" alt="TARUMT Logo" class="logo">
+                    </a>
+                    <!-- Add the hamburger menu icon here -->
+                    <div class="mobile-menu">
+                        <div class="hamburger">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+                        <ul class="navbar-nav  ">
+                            <li class="nav-item active">
+                                <a class="nav-link active-link" href="/Home.aspx">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/AboutUs.aspx">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/ProgrammeModule/Programmes.aspx">Programmes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/StaffModule/Staff.aspx">Our Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/EnquiryModule/enquiryDefault.aspx">Enquiry</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/ProfileDefault.aspx">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="login-button-container">
+                                    <asp:Button ID="btnLogIn" class="button" OnClick="btnLogIn_Click_1" Text="Log In" runat="server" defaultbutton="" UseSubmitBehavior="False" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- end header section -->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-6 col-md-6">
+                        <h4 class="text-light mb-4">Address</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3" style="margin-right: 15px;"></i>Jalan Genting Kelang, Setapak, 53300 Kuala Lumpur</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3" style="margin-right: 10px;"></i>(6)03-41450123</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3" style="margin-right: 10px;"></i>info@tarc.edu.my</p>
+                        <div class="d-flex pt-2" style="margin-bottom: 20px;">
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/tarumtkl"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/channel/UCqjsPpVnwjCRT5mgAgFo1ng"><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/tarumt.official/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <h4 class="text-light mb-4">Navigation</h4>
+                        <a class="btn btn-link" href="/Home.aspx">Home</a>
+                        <a class="btn btn-link" href="/AboutUs.aspx">About Us</a>
+                        <a class="btn btn-link" href="/ProgrammeModule/Programmes.aspx">Programmes</a>
+                        <a class="btn btn-link" href="/StaffModule/Staff.aspx">Our Team</a>
+                        <a class="btn btn-link" href="/EnquiryModule/enquiryDefault.aspx">Enquiry</a>
+                        <a class="btn btn-link" href="/ProfileDefault.aspx">Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            &copy; TAR UMT, All Rights Reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- JS for navigation menu-->
+        <script>
+            function toggleMobileMenu() {
+                const nav = document.querySelector(".navbar-collapse");
+                nav.classList.toggle("show");
+            }
+
+            document.addEventListener("DOMContentLoaded", function () {
+                const mobileMenu = document.querySelector(".mobile-menu");
+                const nav = document.querySelector(".navbar-collapse");
+
+                mobileMenu.addEventListener("click", function () {
+                    toggleMobileMenu();
+                });
+
+                // Show the hamburger icon on smaller screens
+                window.addEventListener("resize", function () {
+                    if (window.innerWidth <= 977) {
+                        mobileMenu.style.display = "block";
+                        // Ensure the menu is initially hidden on small screens
+                        nav.classList.remove("show");
+                    } else {
+                        mobileMenu.style.display = "none";
+                    }
+                });
+
+                // Call the resize event listener on page load
+                window.dispatchEvent(new Event('resize'));
+            });
+
+        </script>
+    </form>
+</body>
+</html>

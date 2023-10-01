@@ -1,0 +1,20 @@
+﻿.title-img-bar {
+    height: 140px;
+    background-image: url('../image/enquiryHeaderPic.png'); /* Replace 'your-image.jpg' with the actual image file path */
+    background-size: cover; /* Ensure the background image covers the entire div */
+    background-position: center; /* Center the background image */
+    display: flex; /* Use flexbox to vertically center the title */
+    align-items: center; /* Vertically center the title within the container */
+}
+
+.title {
+    font-size: 42px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 76px;
+}
+
+.whole-content {
+    margin: 50px auto;
+    width: 80%;
+}
